@@ -22,31 +22,25 @@ A web application to display Dicoding job vacancy listings using Laravel as the 
 
 ## ⚙️ Backend Setup (Laravel)
 
-### 1. Navigate to backend folder
+### 1. Navigate to your project folder
 
 ```bash
+cd your-project-folder
+```
+
+### 2. Create Project Laravel 
+
+```bash
+composer create-project laravel/laravel backend
 cd backend
+composer require laravel/breeze --dev
+php artisan breeze:install
 ```
+Question will pop up: "Which Breeze stack would you like to install?"
+Choose: "API only".
+Other question choose default or just enter.
 
-### 2. Install dependencies
-
-```bash
-composer install
-```
-
-### 3. Copy environment file
-
-```bash
-cp .env.example .env
-```
-
-### 4. Generate application key
-
-```bash
-php artisan key:generate
-```
-
-### 5. Configure database
+### 3. Configure database
 
 Create a database in MySQL, then update `.env`:
 
@@ -56,13 +50,7 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-### 6. Run migrations
-
-```bash
-php artisan migrate
-```
-
-### 7. Start the server
+### 4. Start the server
 
 ```bash
 php artisan serve
@@ -78,17 +66,19 @@ http://127.0.0.1:8000
 
 ## 💻 Frontend Setup (Next.js)
 
-### 1. Navigate to frontend folder
+### 1. Navigate to your project folder
 
 ```bash
-cd frontend
+cd your-project-folder
 ```
 
-### 2. Install dependencies
+### 2. Install Next.js
 
 ```bash
-npm install
+npx create-next-app@latest
 ```
+
+After that, there will be question about your project name, etc. Other than your front-end project name, you can use default answer.
 
 ### 3. Setup environment variables
 
@@ -134,12 +124,19 @@ npm run dev
 http://localhost:3000
 ```
 
+To see API response in browser:
+
+Table name: vacancies
+```
+http://http://127.0.0.1:8000/api/vacancies
+```
+
 ---
 
 ## 📌 Features
 
 * Display job vacancy listings
-* Show job details (company, location, experience, etc.)
+* Show job details preview (company, location, experience, etc.)
 * Indonesian date formatting
 * Active navbar state
 * Conditional salary display
@@ -149,7 +146,10 @@ http://localhost:3000
 ## 📝 Notes
 
 * Make sure the backend server is running before opening the frontend
-* Use Node.js (latest version recommended)
-* Use PHP >= 8.x
+* If you use this source code:
+** Use Node.js >= 16.2.3
+** Use React >= 19.2.4
+** Use PHP >= 8.3
+** Use Laravel >= 13.*
 
 ---
