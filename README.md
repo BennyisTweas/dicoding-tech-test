@@ -1,6 +1,10 @@
 # Dicoding Jobs App
 
 A web application to display Dicoding job vacancy listings using Laravel as the backend API and Next.js as the frontend.
+Note: I apologize for not being able to meet all the website requirements as I'm experiencing some issues, including:
+* Needing to update PHP, Laravel, & Laragon because my XAMPP software isn't stable enough
+* First time using Next.js and Tailwind CSS
+* Memory leak issues while running the front-end website and causing my PC to freeze, crash, & restart automatically
 
 ---
 
