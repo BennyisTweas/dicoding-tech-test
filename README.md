@@ -147,9 +147,9 @@ http://http://127.0.0.1:8000/api/vacancies
 
 * Make sure the backend server is running before opening the frontend
 * If you use this source code:
-** Use Node.js >= 16.2.3
-** Use React >= 19.2.4
-** Use PHP >= 8.3
-** Use Laravel >= 13.*
+* Use Node.js >= 16.2.3
+* Use React >= 19.2.4
+* Use PHP >= 8.3
+* Use Laravel >= 13.*
 
 ---
