@@ -7,3 +7,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/vacancies', function () {
     return VacancyResource::collection(Vacancy::all());
 });
+
+Route::get('/vacancies/{id}', function ($id) {
+    $vacancy = Vacancy::findOrFail($id);
+    return new VacancyResource($vacancy);
+});
